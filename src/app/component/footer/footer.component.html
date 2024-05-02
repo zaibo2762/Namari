@@ -1,0 +1,16 @@
+<div class="row clearfix">
+
+    <p id="copyright" class="col-2">{{foot.title}} </p>
+
+    <!--Social Icons in Footer-->
+    <ul class="col-2 social-icons">
+        @for (items of foot.social; track items) {
+        <li>
+            <a target="_blank" title="Facebook" href="{{items.url}}">
+                <i class="fa {{items.icon}} fa-1x"></i><span>{{items.name}}</span>
+            </a>
+        </li>
+    }
+    </ul>
+    <!--End of Social Icons in Footer-->
+</div>
